@@ -1,4 +1,5 @@
-QUERY = '#RIDEthewave'
+QUERY = '#RIDE2022'
 LIKE = True 
 FOLLOW = False
-SLEEP_TIME = 30
+SLEEP_TIME = 5
+TWEET =""

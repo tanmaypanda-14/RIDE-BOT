@@ -33,8 +33,8 @@ for tweet in tweepy.Cursor(api.search_tweets, q=QUERY).items():
 
         sleep(SLEEP_TIME)
 
-    except tweepy.TweepError as e:
-        print(e.reason)
+    except tweepy.errors.TweepyException as e:
+        print(e.api_messages)
 
     except StopIteration:
         break
